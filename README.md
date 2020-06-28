@@ -109,7 +109,7 @@ $ journalctl -f -u restic-backup.service
 
 ### 7. Email notification on failure
 
-We want to be aware when the automatic backup fails, so we can fix it. Since my laptop does not run a mail server, I went for a solution to set up my laptop to be able to send emails with [postfix via my Gmail](https://easyengine.io/tutorials/linux/ubuntu-postfix-gmail-smtp/). Follow the instructions over there.
+We want to be aware when the automatic backup fails, so we can fix it. Since my laptop does not run a mail server, I went for a solution to set up my laptop to be able to send emails with [postfix via my Gmail](https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/). Follow the instructions over there.
 
 Put this file in `/usr/local/sbin`:
 * `systemd-email`: Sends email using sendmail(1). This script also features time-out for not spamming Gmail servers and getting my account blocked.
