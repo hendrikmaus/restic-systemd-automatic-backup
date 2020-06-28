@@ -1,0 +1,5 @@
+export GOOGLE_PROJECT_ID="<project-id>"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gs-secret-restic-key.json"
+export GOOGLE_BACKUP_BUCKET_NAME="server-backup-home0"
+export RESTIC_REPOSITORY="gs:$GOOGLE_BACKUP_BUCKET_NAME:/"
+export RESTIC_PASSWORD_FILE="/etc/restic/gcs_pw.txt"
